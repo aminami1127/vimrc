@@ -37,6 +37,9 @@ alias spvctl='sudo supervisorctl'
 clip () {
         cat $1 | xclip
     }
+pyclean() {
+    find . -name "*.pyc" | xargs rm -rf
+}
 
 
 #Search command history
